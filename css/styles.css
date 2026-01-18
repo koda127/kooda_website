@@ -4,15 +4,20 @@ body {
     background-color: #0F100F;
 }
 
-header {
+header > h1{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: yellowgreen;
 }
 
 header > h2 {
     text-align: center;
-    font-size: 0.7em;
+    font-size: 1em;
+}
+
+header > h3 {
+    text-align: center;
+    font-size: 0.8em;
 }
 
 .column {
