@@ -60,8 +60,16 @@ p {
     color: rgb(226, 232, 238)
 }
 
+/* Separadores */
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    width: 80%;
+    margin: 3rem auto;
+}
+
 /* Yo */
-header h1 {
+h1 {
     font-size: 2.3rem;
     color: rgb(144, 212, 8);
 }
@@ -177,5 +185,6 @@ a:hover {
 
 footer {
     text-align: center;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
