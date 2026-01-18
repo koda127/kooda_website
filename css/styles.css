@@ -1,3 +1,4 @@
+/* Base */
 html {
     scroll-behavior: smooth;
 }
@@ -21,9 +22,27 @@ body {
     line-height: 1.6;
 }
 
+/* Layout */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    margin-bottom: 1.25rem;
+}
+
+
+/* Titulos */
 h1 {
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -35,15 +54,39 @@ h3 {
     font-size: 1.1rem;
 }
 
+/* Texto */
 p {
     margin: 0.5rem 0 1.2rem;
     color: rgb(226, 232, 238)
 }
 
-section {
-    margin-bottom: 3rem;
+/* Yo */
+header h1 {
+    font-size: 2.3rem;
+    color: rgb(144, 212, 8);
 }
 
+.mi-nombre {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.mi-nombre p {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.mi-nombre h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.mi-nombre h3 {
+    font-size: 0.9em;
+}
+
+/* Links */
 a {
     color: inherit;
 }
@@ -52,43 +95,29 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
-    max-width: 500px;
+/* Technologies */
+.tech-list {
     margin: 0 auto;
-    padding: 3rem 1.5rem 1.5rem;
-}
+    max-width: 100%;
+    font-weight: 500;
+    list-style: none;
 
-header>h1 {
-    text-align: center;
-    font-size: 2.3rem;
-    color: rgb(144, 212, 8);
-}
-
-header>h2 {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-header>h3 {
-    text-align: center;
-    font-size: 0.9em;
-}
-
-section {
-    align-self: flex-start;
-}
-
-.column {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 0 auto;
-    text-align: left;
-    padding-inline: 50px;
+    justify-content: left;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 8px;
 }
 
+.tech-list li {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Proyectos */
 .projects-grid {
     display: grid;
     gap: 1.5rem;
@@ -144,29 +173,4 @@ section {
 
 .project-link:hover {
     opacity: 1;
-}
-
-.tech-list {
-    margin: 0 auto;
-    max-width: 100%;
-    font-weight: 500;
-    list-style: none;
-
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    column-gap: 15px;
-    row-gap: 8px;
-}
-
-.tech-list li {
-    padding: 0.4rem 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 999px;
-    font-size: 0.85rem;
-    opacity: 0.9;
-}
-
-.content-text {
-    line-height: 30px;
 }
