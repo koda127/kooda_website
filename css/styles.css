@@ -73,6 +73,7 @@ hr {
 nav {
     display: flex;
     justify-content: space-between;
+    margin-top: -0.75rem;
     margin-bottom: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.75rem;
@@ -151,12 +152,14 @@ a:hover {
     border-radius: 999px;
     font-size: 0.85rem;
     opacity: 0.9;
+
+        transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
 }
 
 .tech-list li:hover {
-    border: 1px solid rgba(144, 212, 8, 0.15);
-    transition: border-color 0.2s ease, color 0.2s ease;
-    color: rgb(144, 212, 8);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
 }
 
@@ -181,9 +184,8 @@ a:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-2px);
     border-color: rgba(255, 255, 255, 0.4);
-    
+    transform: translateY(-2px);
 }
 
 .project-card h3 {
@@ -206,12 +208,13 @@ a:hover {
     padding: 0.3rem 0.6rem;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 999px;
+
+    transition:
+        border-color 0.4s ease;
 }
 
 .project-tech li:hover {
-    border: 1px solid rgba(144, 212, 8, 0.15);
-    transition: border-color 0.2s ease, color 0.2s ease;
-    color: rgb(144, 212, 8);
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 .project-link {
