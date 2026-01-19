@@ -98,14 +98,6 @@ h1 {
     color: rgb(144, 212, 8);
 }
 
-h1 a {
-    text-decoration: none;
-}
-
-h1 a:hover {
-    text-decoration: none;
-}
-
 h1:hover {
     transform: translateY(-2px);
     
@@ -241,4 +233,12 @@ footer {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
