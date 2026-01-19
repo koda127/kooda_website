@@ -64,14 +64,42 @@ p {
 hr {
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
     width: 80%;
     margin: 3rem auto;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    padding: 0.5rem 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+nav a:hover {
+    color: rgb(144, 212, 8);
+    opacity: 1;
+    transform: translateY(-2px);
 }
 
 /* Yo */
 h1 {
     font-size: 2.3rem;
     color: rgb(144, 212, 8);
+}
+
+h1:hover {
+    transform: translateY(-2px);
+    
 }
 
 .mi-nombre {
@@ -125,6 +153,13 @@ a:hover {
     opacity: 0.9;
 }
 
+.tech-list li:hover {
+    border: 1px solid rgba(144, 212, 8, 0.15);
+    transition: border-color 0.2s ease, color 0.2s ease;
+    color: rgb(144, 212, 8);
+    transform: translateY(-2px);
+}
+
 /* Proyectos */
 .projects-grid {
     display: grid;
@@ -148,6 +183,7 @@ a:hover {
 .project-card:hover {
     transform: translateY(-2px);
     border-color: rgba(255, 255, 255, 0.4);
+    
 }
 
 .project-card h3 {
@@ -172,6 +208,12 @@ a:hover {
     border-radius: 999px;
 }
 
+.project-tech li:hover {
+    border: 1px solid rgba(144, 212, 8, 0.15);
+    transition: border-color 0.2s ease, color 0.2s ease;
+    color: rgb(144, 212, 8);
+}
+
 .project-link {
     margin-top: 1.5rem;
     text-decoration: none;
@@ -180,6 +222,7 @@ a:hover {
 }
 
 .project-link:hover {
+    color: rgb(144, 212, 8);
     opacity: 1;
 }
 

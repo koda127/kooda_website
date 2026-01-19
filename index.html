@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<main class="container">
 
-    <head>
-        <style>
-            /* Toda la página está en negro hasta que cargue el css */
-            body {
-                background-color: #0F100F;
-                color: #0F100F;
-            }
+<head>
+    <style>
+        /* Toda la página está en negro hasta que cargue el css */
+        body {
+            background-color: #0F100F;
+            color: #0F100F;
+        }
 
-            hr {
-                border: none;
-            }
+        hr {
+            border: none;
+        }
 
-            a {
-                color: #0F100F;
-            }
-        </style>
+        a {
+            color: #0F100F;
+        }
+    </style>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>kooda.space</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>kooda.space</title>
+</head>
 
-    <body class="column">
-        <header>
-            <h1>&#123; kooda.space &#125;</h1>
-            <div class="mi-nombre">
-                <h2>Mario Rodríguez Aguado</h2>
-                <h3>Desarrollador Web · en formación</h2>
-            </div>
-        </header>
+<body>
+    <!-- DEFINE LAYOUT -->
+    <main class="layout">
 
-        <hr>
+        <!-- CONTENEDOR CENTRADO -->
+        <div class="container">
+            <header>
+                <nav>
+                    <a href="#about">Sobre mi</a>
+                    <a href="#projects">Proyectos</a>
+                    <a href="#skills">Contacto</a>
+                </nav>
 
-        <section id="about">
-            <h2>Sobre mí</h2>
-            <p>Estudiante de desarrollo web en STEM.</p>
+                <h1>&#123; kooda.space &#125;</h1>
+                <div class="mi-nombre">
+                    <h2>Mario Rodríguez Aguado</h2>
+                    <h3>Desarrollador Web · en formación</h2>
+                </div>
+            </header>
 
-                <p>Utilizo esta página como espacio personal para practicar lo que voy aprendiendo, especialmente HTML y
-                CSS, y para ir mejorando poco a poco a través de proyectos propios.</p>
+            <hr>
+
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <p>Estudiante de desarrollo web en STEM.</p>
+
+                <p>Utilizo esta página como espacio personal para practicar lo que voy aprendiendo, especialmente
+                    HTML y
+                    CSS, y para ir mejorando poco a poco a través de proyectos propios.</p>
 
                 <p>El portfolio está en construcción y lo iré actualizando a medida que avance en mi formación.</p>
-        </section>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="skills">
-            <h2>Tecnologías</h2>
-            <p>Tecnologías que estoy aprendiendo y utilizando actualmente en proyectos personales.</p>
-            <ul class="tech-list" class="frontend-stack">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Flexbox</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-            </ul>
-        </section>
+            <section id="skills">
+                <h2>Tecnologías</h2>
+                <p>Tecnologías que estoy aprendiendo y utilizando actualmente en proyectos personales.</p>
+                <ul class="tech-list" class="frontend-stack">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Flexbox</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                </ul>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="projects">
-            <h2>Proyectos</h2>
+            <section id="projects">
+                <h2>Proyectos</h2>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>kooda.space</h3>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>kooda.space</h3>
 
-                    <p>
-                        Mi primer proyecto personal, desarrollado desde cero para practicar HTML y CSS.
+                        <p>
+                            Mi primer proyecto personal, desarrollado desde cero para practicar HTML y CSS.
 
-                        En este proyecto trabajo conceptos como diseño responsive, estructura semántica y organización
-                        del contenido.
-                    </p>
+                            En este proyecto trabajo conceptos como diseño responsive, estructura semántica y
+                            organización
+                            del contenido.
+                        </p>
 
-                    <ul class="project-tech">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Responsive</li>
-                    </ul>
+                        <ul class="project-tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Responsive</li>
+                        </ul>
 
-                    <a href="https://kooda.space" target="_blank" class="project-link">
-                        Ver proyecto → (este sitio)
-                    </a>
-                </article>
-            </div>
-        </section>
+                        <a href="https://kooda.space" target="_blank" class="project-link">
+                            Ver proyecto → (este sitio)
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+        </div>
 
-</main>
+    </main>
 
-<footer>
-    <p>© 2026 · kooda</p>
-</footer>
+    <footer>
+        <p>© 2026 · kooda</p>
+    </footer>
 </body>
 
 </html>
